@@ -1,3 +1,5 @@
+import java.util.stream.Stream;
+
 public class Day0 extends Day {
 
     public static void main(String[] args) {
@@ -18,12 +20,13 @@ public class Day0 extends Day {
 
 
     @Override
-    public String part1(String input) {
+    String streamPart1(Stream<String> input) {
         return "0";
     }
 
     @Override
-    public String part2(String input) {
+    String streamPart2(Stream<String> input) {
         return "0";
     }
+
 }

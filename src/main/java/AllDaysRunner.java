@@ -6,6 +6,7 @@ public class AllDaysRunner {
         System.out.println("Running Advent Of Code 2023");
         long totalTime =
             Stream.of(
+                new DayTest(),
                 new Day0()
             ).mapToLong(day -> {
                 System.out.println();
