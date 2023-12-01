@@ -7,7 +7,8 @@ public class AllDaysRunner {
         long totalTime =
             Stream.of(
                 new DayTest(),
-                new Day0()
+                new Day0(),
+                new Day1()
             ).mapToLong(day -> {
                 System.out.println();
                 return day.run();

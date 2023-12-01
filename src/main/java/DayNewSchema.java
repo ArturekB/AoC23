@@ -6,14 +6,14 @@ public class DayNewSchema extends Day {
 
     public static void main(String[] args) {
         DayNewSchema day = new DayNewSchema();  // https://adventofcode.com/2023/day/0
-        Stream<String> sample = readLines("%s_sample.txt".formatted("Day0"));
+        Stream<String> sample = readLines("%s_sample.txt".formatted(day.name()));
 
         assertEquals(0, day.streamPart1(sample));
         assertEquals(0, day.streamPart2(sample));
 
-        day.run(readLines("%s.txt".formatted("Day0")), day::streamPart1, "Part 1 result");
+        day.run(readLines("%s.txt".formatted(day.name())), day::streamPart1, "Part 1 result");
 
-        day.run(readLines("%s.txt".formatted("Day0")), day::streamPart2, "Part 2 result");
+        day.run(readLines("%s.txt".formatted(day.name())), day::streamPart2, "Part 2 result");
     }
 
 
